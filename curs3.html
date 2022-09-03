@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+</head>
+
+<body class="body-bg vh-100">
+    
+   
+  <!-- html custom -->
+
+  <div class="container">
+    <!-- header -->
+    <!-- row este impartit in 12 col -->
+    <div class="row my-5">
+      <!-- imagine, text, butoane -->
+
+      <div class="align-self-center col-3 fs-2 fw-bold text-center text-info" style="margin-left:15em; margin-right:2em">
+        Book your next trip
+      </div>
+      <div class="align-self-center" style="margin-left:23em;font-size: 18px; color:white">
+        An arrangement you make to a hotel room, tickets, etc. at a <br>
+      </div>
+      <div class="align-self-center" style="margin-left:30em;font-size: 18px; color:white">
+        particular time in the future
+      </div>
+
+      <nav style="margin-top: 10em">
+        <a> <label for="go from" style="margin-left:14em">Leave From:</label> </a>
+        <a><label for="destination" style="margin-left:-8em">To:</label></a>
+        <a><label for="date" style="margin-left:-10em">Depart:</label></a>
+
+      </nav>
+      
+      <nav>
+
+        <span> <select name="leave from" id="drop1" style="margin-left:14em; width: 200px; margin-right:1em">
+            <option value="Brazil">Brazil</option>
+            <option value="Romania">Romania</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Poland">Poland</option>
+          </select>
+        </span>
+
+        <span>
+          <select name="to" id="drop2"style = " width: 200px; margin-right:1em">
+            <option value="Argentina">Argentina</option>
+            <option value="Romania">Romania</option>
+            <option value="Cuba">Cuba</option>
+            <option value="Colombia">Colombia</option>
+          </select>
+        </span>
+        <span>
+          <form action="/action_page.php">
+            <input type="date" id="vacation date" name="" style=" width: 200px">
+          </form>
+        </span>
+        <span>
+          <button class="btn btn-primary"style="margin-left:1em; width:190px">SEARCH</button>
+        </span>
+      </nav>
+
+      
+
+    </div>
+    <div class="row">
+
+      <span class="card me-3" style="width: 18rem; margin-left: 13em" id="card1">
+        <img
+          src="https://do84cgvgcm805.cloudfront.net/article/362/1200/25cf654358d7812a07902fa42f249dedbec8eb058bdda541c88b9e3b317a93d9.jpg"
+          class="card-img-top" alt="Logo image" />
+        <div class="card-body">
+          <p class="card-text" style="font-size: 14px">
+            Entire apparment · 3 Guests · 2 Beds
+          </p>
+          <h5 class="card-title" style="font-size: 17px">Lovely and cosy appartment</h5>
+          <p class="card-text" style="font-size: 12px">
+            Siri's latest trick is offering a hands-free TV <br> viewing experience that will allow<br> consumers to
+            turn on or off their television,<br> change inputs, fast forward.
+          </p>
+        </div>
+        <button class="btn" id="toggle-content">FROM / NIGHT</button>
+      </span>
+      <span class="card me-3" style="width: 18rem" id="card2">
+        <img
+          src="https://the-view-luxury-villas.com/wp-content/uploads/2019/11/Luxury-Villas-Lefkada-Infinity-Pool-und-Garten6.jpg"
+          class="card-img-top" alt="Logo image" />
+        <div class="card-body">
+          <p class="card-text" style="font-size: 14px">
+            Private Room · 1 Guest · 1 Sofa
+          </p>
+          <h5 class="card-title" style="font-size: 17px">Single room in the center of the city</h5>
+          <p class="card-text" style="font-size: 12px">
+            As Uber works through a huge amount of<br> internal management turmoil, the <br>company is also
+            consolidating more of its<br> international business.
+          </p>
+        </div>
+        <button class="btn" id="toggle-content">FROM / NIGHT</button>
+      </span>
+      <span class="card me-3" style="width: 18rem " id="card3">
+        <img src="https://www.theluxurysignature.com/wp-content/uploads/2018/10/villa-noku-bali-banner.jpg"
+          class="card-img-top" alt="Logo image" />
+        <div class="card-body">
+          <p class="card-text" style="font-size: 14px">
+            Entire Apartment · 2 Guest · 2 Beds
+          </p>
+          <h5 class="card-title" style="font-size: 17px">Independent house bedroom kitchen</h5>
+          <p class="card-text" style="font-size: 12px">
+            Music is something that every person has<br> his or her own specific opinion about.<br> Different people
+            have different taste, and <br> various types of music.
+          </p>
+        </div>
+        <button class="btn" id="toggle-content">FROM / NIGHT</button>
+      </span>
+      <span class="card me-3" style="width: 18rem;margin-top:2em; margin-left: 13em" id="card4">
+        <img src="https://img.directbooking.ro/getimage.ashx?file=ho$ho_d1e57303-5a84-4e9a-b486-e451472c3352.jpg" class="card-img-top"
+          alt="Logo image" />
+        <div class="card-body">
+          <p class="card-text" style="font-size: 14px">
+            Entire Apartment · 2 Guest · 1 Bed
+          </p>
+          <h5 class="card-title" style="font-size: 17px">Zen Gateway with pool and garden </h5>
+          <p class="card-text" style="font-size: 12px">
+            Fast forward, rewind and more, without<br> having to first invoke a specific skill, or <br>even press a
+            button on their remote.
+          </p>
+        </div>
+        <button class="btn" id="toggle-content">FROM / NIGHT</button>
+      </span>
+
+      <span class="card me-3" style="width: 18rem; margin-top:2em" id="card5">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ville-di-lusso-piu-belle-del-mondo-oggetto-editoriale-800x600-1528889075.jpg?resize=480:*"
+          class="card-img-top" alt="Logo image" />
+        <div class="card-body">
+          <p class="card-text" style="font-size: 14px">
+            Entire Flat · 8 Guest · 3 Rooms
+          </p>
+          <h5 class="card-title" style="font-size: 17px">Cheapest hotels for a luxury vacation</h5>
+          <p class="card-text" style="font-size: 12px">
+            Today, the company announced it will be<br> combining its rides-on-demand business<br> and UberEATS.
+          </p>
+        </div>
+        <button class="btn" id="toggle-content">FROM / NIGHT</button>
+      </span>
+      <span class="card me-3" style="width: 18rem; margin-top:2em" id="card6">
+        <img src="https://www.uniqueretreats.com/wp-content/uploads/2018/01/villa3766-pic6.jpg" class="card-img-top"
+          alt="Logo image" />
+        <div class="card-body">
+          <p class="card-text" style="font-size: 14px">
+            Entire Apartment · 2 Guest · 1 Bed
+          </p>
+          <h5 class="card-title" style="font-size: 17px">Cozy Double Room Near Station</h5>
+          <p class="card-text" style="font-size: 12px">
+            Different people have different taste, and <br>various types of music have many ways of <br>leaving an
+            impact on someone.
+          </p>
+        </div>
+        <button class="btn" id="toggle-content">FROM / NIGHT</button>
+      </span>
+
+      <nav style="margin-top:7em">
+        <i class="fa-thin fa-solid fa-boxes-stacked" style="margin-left: 20em"></i>
+        <textW style="margin-left: 12em; margin-right:6em">company</textW>
+        <textW style="margin-right:6em">resources</textW>
+        <textW style="margin-right:6em">help & support</textW>
+        <textW>legal</textW>
+      </nav>
+      <p><textW style="margin-left: 26.5em">DB Summer School</textW></p>
+
+      
+      <span class="fa-regular fa-circle fa-2x;" style="margin-left:20em; margin-bottom:2em">
+        <i class="fa-brands fa-facebook"></i>
+      
+      <i class="fa-brands fa-twitter"></i>
+    <i class="fa-brands fa-dribbble"></i>
+    <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-youtube"></i>
+    </span>
+
+
+      <p style="margin-left:26em">
+        All rights reserved. Copyright © 2022 DB Summer School by Grupa A.
+      </p>
+      
+    </div>
+    <div class="row"></div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+    integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+  
+  <script src="https://kit.fontawesome.com/469f7ae774.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

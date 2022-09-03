@@ -1,0 +1,56 @@
+.body-background {
+    background-image: url(https://images.g2a.com/1080x1080/1x1x0/red-dead-redemption-2-xbox-live-key-global/5bc9c521ae653a5fd7677389),
+                      url(https://www.lifegate.com/app/uploads/mare-fa-bene-2.jpg);
+    background-position: top center,bottom center;
+    background-repeat: no-repeat,no-repeat;
+    background-size: contain 1000px, contain 300px;
+
+    /*background-size: cover; */
+}
+
+  .body-bg {
+    position: relative;
+    background-image: 
+      url(https://www.wallpaperflare.com/static/490/395/734/mountains-lake-mountain-wallpaper.jpg),
+      url(https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png);
+      
+      background-position: top center,bottom center, center center;
+      background-repeat: no-repeat,repeat-y, no-repeat;
+      background-size: 65% 42%, 65% 5000px, 65% 42%;
+  }
+  .body-bg-overlay{
+    position: absolute;
+    background-image: url(https://st.depositphotos.com/2251265/2615/i/950/depositphotos_26153077-stock-photo-white-brick-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 65% 42%;
+  }
+
+  
+
+.ey
+ {
+  display:inline-block;
+ } 
+form{
+    display:inline-block;
+}
+
+textW{
+    color: black;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+nav a {
+    display: inline-block;
+    margin-right:16em
+  }
+
+
+
+ 
+ 
+
+  
