@@ -7,27 +7,28 @@
     background-position: top center,bottom center;
     background-repeat: no-repeat,repeat-y;
     background-size: 65% 42%, 65% 5000px;
-    /*animation: example 5s infinite alternate;*/
+    animation: example 5s alternate ;
+    
   }
-  .body-bg-overlay{
-    position: absolute;
-    background-image: url(https://st.depositphotos.com/2251265/2615/i/950/depositphotos_26153077-stock-photo-white-brick-background.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: 65% 42%;
-  }
+ 
   @keyframes example {
-    from {background:url(https://cdn.theatlantic.com/thumbor/mvJegCSc4lofReQBbij-KJXD4jk=/900x587/media/img/photo/2013/10/yosemite-national-park-closed-on-its-123rd-birthda/y01_84161116/original.jpg),
+    0% {background:url(https://cdn.theatlantic.com/thumbor/mvJegCSc4lofReQBbij-KJXD4jk=/900x587/media/img/photo/2013/10/yosemite-national-park-closed-on-its-123rd-birthda/y01_84161116/original.jpg),
       url(https://www.pngmagic.com/product_images/light-gray-background.jpg);
     background-position: top center,bottom center;
     background-repeat: no-repeat,repeat-y;
     background-size: 65% 42%, 65% 5000px;}
-    to {background:url(https://spacetourismguide.com/wp-content/uploads/2020/05/Yosemite-Stargazing-Yosemite-Falls.jpg),
+    50% {background:url(https://spacetourismguide.com/wp-content/uploads/2020/05/Yosemite-Stargazing-Yosemite-Falls.jpg),
+      url(https://www.pngmagic.com/product_images/light-gray-background.jpg);
+    background-position: top center,bottom center;
+    background-repeat: no-repeat,repeat-y, no-repeat;
+    background-size: 65% 42%, 65% 5000px, 65% 42%;}
+    100%{background:url(https://lp-cms-production.imgix.net/2020-11/500pxRF_15179369.jpg?auto=format&q=40&ar=16%3A9&fit=crop),
       url(https://www.pngmagic.com/product_images/light-gray-background.jpg);
     background-position: top center,bottom center;
     background-repeat: no-repeat,repeat-y, no-repeat;
     background-size: 65% 42%, 65% 5000px, 65% 42%;}
   }
+ 
   
   divergent {
     position: relative;
@@ -86,8 +87,6 @@ nav a {
     margin-right:16em
   }
 
-
-/* Pagination links */
 .pagination a {
     color: black;
     float: left;
@@ -95,14 +94,12 @@ nav a {
     text-decoration: none;
     transition: background-color .3s;
   }
-  
-  /* Style the active/current link */
+
   .pagination a.active {
     background-color: dodgerblue;
     color: white;
   }
-  
-  /* Add a grey background color on mouse-over */
+
   .pagination a:hover:not(.active) {background-color: #ddd;}
 
   .pagination a.circle{
@@ -119,7 +116,7 @@ nav a {
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(0, 0, 0, 0.5); 
     color: #f1f1f1;
     width: 100%;
     transition: .5s ease;
@@ -130,18 +127,6 @@ nav a {
     text-align: center;
   }
 
-
-
-.card img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.card img:hover {
-  opacity: 0;
-  background: url("https://archello.s3.eu-central-1.amazonaws.com/images/2020/01/05/Luxury-Contemporary-Villa-Interior-Design-1.1578228835.315.jpg") no-repeat;
-}
 
 .button {
     border-radius: 4px;
@@ -166,7 +151,6 @@ nav a {
     position: relative;
     transition: 0.5s;
   }
-  
   .button span:after {
     content: '\00bb';
     position: absolute;
@@ -175,31 +159,22 @@ nav a {
     right: -20px;
     transition: 0.5s;
   }
-  
   .button:hover span {
     padding-right: 25px;
   }
-  
   .button:hover span:after {
     opacity: 1;
     right: 0;
   }
- 
-  /* Remove extra left and right margins, due to padding */
 .row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
- 
   .column {
     float: left;
     width: 25%;
     padding: 0 10px;
   }
-
-
-  
+ 
