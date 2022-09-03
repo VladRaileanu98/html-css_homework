@@ -1,22 +1,13 @@
-.body-background {
-    background-image: url(https://images.g2a.com/1080x1080/1x1x0/red-dead-redemption-2-xbox-live-key-global/5bc9c521ae653a5fd7677389),
-                      url(https://www.lifegate.com/app/uploads/mare-fa-bene-2.jpg);
-    background-position: top center,bottom center;
-    background-repeat: no-repeat,no-repeat;
-    background-size: contain 1000px, contain 300px;
 
-    /*background-size: cover; */
-}
 
   .body-bg {
     position: relative;
-    background-image: 
-      url(https://www.wallpaperflare.com/static/490/395/734/mountains-lake-mountain-wallpaper.jpg),
-      url(https://htmlcolorcodes.com/assets/images/colors/steel-gray-color-solid-background-1920x1080.png);
-      
-      background-position: top center,bottom center, center center;
-      background-repeat: no-repeat,repeat-y, no-repeat;
-      background-size: 65% 42%, 65% 5000px, 65% 42%;
+    background:url(https://cdn.theatlantic.com/thumbor/mvJegCSc4lofReQBbij-KJXD4jk=/900x587/media/img/photo/2013/10/yosemite-national-park-closed-on-its-123rd-birthda/y01_84161116/original.jpg),
+    url(https://www.pngmagic.com/product_images/light-gray-background.jpg);
+    background-position: top center,bottom center;
+    background-repeat: no-repeat,repeat-y;
+    background-size: 65% 42%, 65% 5000px;
+    /*animation: example 5s infinite alternate;*/
   }
   .body-bg-overlay{
     position: absolute;
@@ -25,9 +16,56 @@
     background-repeat: no-repeat;
     background-size: 65% 42%;
   }
-
+  @keyframes example {
+    from {background:url(https://cdn.theatlantic.com/thumbor/mvJegCSc4lofReQBbij-KJXD4jk=/900x587/media/img/photo/2013/10/yosemite-national-park-closed-on-its-123rd-birthda/y01_84161116/original.jpg),
+      url(https://www.pngmagic.com/product_images/light-gray-background.jpg);
+    background-position: top center,bottom center;
+    background-repeat: no-repeat,repeat-y;
+    background-size: 65% 42%, 65% 5000px;}
+    to {background:url(https://spacetourismguide.com/wp-content/uploads/2020/05/Yosemite-Stargazing-Yosemite-Falls.jpg),
+      url(https://www.pngmagic.com/product_images/light-gray-background.jpg);
+    background-position: top center,bottom center;
+    background-repeat: no-repeat,repeat-y, no-repeat;
+    background-size: 65% 42%, 65% 5000px, 65% 42%;}
+  }
   
+  divergent {
+    position: relative;
+    animation: mymove 5s infinite;
+  }
+  
+  #divergent1 {animation-timing-function: linear;}
+  #divergent2 {animation-timing-function: ease;}
+  #divergent3 {animation-timing-function: ease-in;}
+  #divergent4 {animation-timing-function: ease-out;}
+  #divergent5 {animation-timing-function: ease-in-out;}
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 700px;}
+  }
 
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+  
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+  
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+  }
+  
+  .animate-this-element {
+    animation: pulse 5s infinite;
+  }
+  
 .ey
  {
   display:inline-block;
@@ -49,8 +87,119 @@ nav a {
   }
 
 
+/* Pagination links */
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+  }
+  
+  /* Style the active/current link */
+  .pagination a.active {
+    background-color: dodgerblue;
+    color: white;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .pagination a:hover:not(.active) {background-color: #ddd;}
 
+  .pagination a.circle{
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;  
+    border: 2px solid #777;
+    border-radius: 100%;
+  }
+
+
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card img:hover {
+  opacity: 0;
+  background: url("https://archello.s3.eu-central-1.amazonaws.com/images/2020/01/05/Luxury-Contemporary-Villa-Interior-Design-1.1578228835.315.jpg") no-repeat;
+}
+
+.button {
+    border-radius: 4px;
+    background-color: #3594F9;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding:5px;
+    width:190px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .info{
+    border-color: #2196F3;
+    color:dodgerblue;
+  }
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
  
+  /* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
  
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+
 
   

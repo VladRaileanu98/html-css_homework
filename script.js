@@ -35,3 +35,4 @@ function onClickBtnRemove() {
         links.removeChild(element);
     }
 }
+

@@ -13,7 +13,7 @@
 </head>
 
 <body class="body-bg vh-100">
-    
+  
    
   <!-- html custom -->
 
@@ -33,41 +33,42 @@
         particular time in the future
       </div>
 
-      <nav style="margin-top: 10em">
+      <nav style="margin-top: 12em">
         <a> <label for="go from" style="margin-left:14em">Leave From:</label> </a>
         <a><label for="destination" style="margin-left:-8em">To:</label></a>
         <a><label for="date" style="margin-left:-10em">Depart:</label></a>
-
       </nav>
       
       <nav>
-
-        <span> <select name="leave from" id="drop1" style="margin-left:14em; width: 200px; margin-right:1em">
+        <span> <select name="leave from" id="drop1" style="margin-left:14em; width: 200px; margin-right:1em; color:gray">
             <option value="Brazil">Brazil</option>
             <option value="Romania">Romania</option>
             <option value="Bulgaria">Bulgaria</option>
             <option value="Poland">Poland</option>
+            <option value="India">India</option>
           </select>
         </span>
 
         <span>
-          <select name="to" id="drop2"style = " width: 200px; margin-right:1em">
+          <select name="to" id="drop2"style = " width: 200px; margin-right:1em; color:gray">
             <option value="Argentina">Argentina</option>
             <option value="Romania">Romania</option>
             <option value="Cuba">Cuba</option>
             <option value="Colombia">Colombia</option>
+            <option value="Mexico">Mexico</option>
           </select>
         </span>
         <span>
           <form action="/action_page.php">
-            <input type="date" id="vacation date" name="" style=" width: 200px">
+            <input type="date" id="vacation date" name="" style=" width: 200px; color:gray">
           </form>
         </span>
         <span>
-          <button class="btn btn-primary"style="margin-left:1em; width:190px">SEARCH</button>
+          
+          <button class="button animate-this-element"style="margin-left:1em"><span>SEARCH </span></button>
         </span>
       </nav>
-
+      
       
 
     </div>
@@ -87,7 +88,7 @@
             turn on or off their television,<br> change inputs, fast forward.
           </p>
         </div>
-        <button class="btn" id="toggle-content">FROM / NIGHT</button>
+        <button class="btn" id="toggle-content"style="border-color: #2196F3;margin-bottom:1em">FROM / NIGHT</button>
       </span>
       <span class="card me-3" style="width: 18rem" id="card2">
         <img
@@ -103,7 +104,7 @@
             consolidating more of its<br> international business.
           </p>
         </div>
-        <button class="btn" id="toggle-content">FROM / NIGHT</button>
+        <button class="btn" id="toggle-content"style="border-color: #2196F3;margin-bottom:1em">FROM / NIGHT</button>
       </span>
       <span class="card me-3" style="width: 18rem " id="card3">
         <img src="https://www.theluxurysignature.com/wp-content/uploads/2018/10/villa-noku-bali-banner.jpg"
@@ -118,9 +119,9 @@
             have different taste, and <br> various types of music.
           </p>
         </div>
-        <button class="btn" id="toggle-content">FROM / NIGHT</button>
+        <button class="btn" id="toggle-content"style="border-color: #2196F3;margin-bottom:1em">FROM / NIGHT</button>
       </span>
-      <span class="card me-3" style="width: 18rem;margin-top:2em; margin-left: 13em" id="card4">
+      <span class="card me-3" style="width: 18rem;margin-top:2em; margin-left: 13em;" id="card4">
         <img src="https://img.directbooking.ro/getimage.ashx?file=ho$ho_d1e57303-5a84-4e9a-b486-e451472c3352.jpg" class="card-img-top"
           alt="Logo image" />
         <div class="card-body">
@@ -133,7 +134,7 @@
             button on their remote.
           </p>
         </div>
-        <button class="btn" id="toggle-content">FROM / NIGHT</button>
+        <button class="btn" id="toggle-content"style="border-color: #2196F3;margin-bottom:1em">FROM / NIGHT</button>
       </span>
 
       <span class="card me-3" style="width: 18rem; margin-top:2em" id="card5">
@@ -149,7 +150,7 @@
             Today, the company announced it will be<br> combining its rides-on-demand business<br> and UberEATS.
           </p>
         </div>
-        <button class="btn" id="toggle-content">FROM / NIGHT</button>
+        <button class="btn" id="toggle-content"style="border-color: #2196F3;margin-bottom:1em">FROM / NIGHT</button>
       </span>
       <span class="card me-3" style="width: 18rem; margin-top:2em" id="card6">
         <img src="https://www.uniqueretreats.com/wp-content/uploads/2018/01/villa3766-pic6.jpg" class="card-img-top"
@@ -164,36 +165,44 @@
             impact on someone.
           </p>
         </div>
-        <button class="btn" id="toggle-content">FROM / NIGHT</button>
+        <button class="btn" id="toggle-content"style="border-color: #2196F3;margin-bottom:1em">FROM / NIGHT</button>
       </span>
 
-      <nav style="margin-top:7em">
-        <i class="fa-thin fa-solid fa-boxes-stacked" style="margin-left: 20em"></i>
+      <div class="pagination" style="margin-top:1em;margin-left:48em">
+        <a href="#">&laquo;</a>
+        <a href="#" class="">1</a>
+        <a class="active" href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+      <nav style="margin-top:5em">
+        <divergent class="fa-thin fa-solid fa-boxes-stacked" style="margin-left: 20em"></divergent>
         <textW style="margin-left: 12em; margin-right:6em">company</textW>
         <textW style="margin-right:6em">resources</textW>
         <textW style="margin-right:6em">help & support</textW>
         <textW>legal</textW>
       </nav>
       <p><textW style="margin-left: 26.5em">DB Summer School</textW></p>
+      
 
+      <span class="" style="margin-left:20em; margin-bottom:2em">
+        <divergent id="divergent1" class="fa-brands fa-facebook"></divergent>
       
-      <span class="fa-regular fa-circle fa-2x;" style="margin-left:20em; margin-bottom:2em">
-        <i class="fa-brands fa-facebook"></i>
-      
-      <i class="fa-brands fa-twitter"></i>
-    <i class="fa-brands fa-dribbble"></i>
-    <i class="fa-brands fa-github"></i>
-      <i class="fa-brands fa-youtube"></i>
+      <divergent id="divergent2" class="fa-brands fa-twitter"></divergent>
+    <divergent id="divergent3" class="fa-brands fa-dribbble"></divergent>
+    <divergent id="divergent4" class="fa-brands fa-github"></divergent>
+      <divergent id="divergent5" class="fa-brands fa-youtube"></divergent>
     </span>
-
-
       <p style="margin-left:26em">
         All rights reserved. Copyright © 2022 DB Summer School by Grupa A.
       </p>
-      
     </div>
     <div class="row"></div>
   </div>
+  
 
 
 
@@ -209,6 +218,9 @@
   <script src="script.js"></script>
   
   <script src="https://kit.fontawesome.com/469f7ae774.js" crossorigin="anonymous"></script>
+</body>
+<body>
+  <div class="card"></div>
 </body>
 
 </html>
